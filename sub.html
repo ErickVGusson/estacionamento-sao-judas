@@ -44,8 +44,6 @@
 
             <li><a href="sub.html">Orçamentos</a></li>
 
-            <li><a href="sites.html">+</a></li>
-
         </ul>
 
     </nav>
@@ -61,31 +59,30 @@
                 <legend> Identificação do dono do carro </legend>
 
                 <p><label for="nome_dono">Nome:</label> <input type="text" name="nome_dono" id="nome_dono" size="50"
-                        maxlength="100" placeholder="Digite o nome completo do dono do carro" /></p>
+                        maxlength="100" placeholder="Digite o nome completo do dono do carro" /required></p>
 
                 <p><label for="endereco">Endereço:</label> <input type="text" name="endereco" id="endereco" size="80"
-                        maxlength="60" placeholder="Digite o endereço" /></p>
+                        maxlength="60" placeholder="Digite o endereço" /required></p>
 
-                <p><label for="cep">CEP:</label> <input type="text" name="cep" id="cep" size="10" maxlength="9"
-                        placeholder="XXXXX-XXX" /></p>
+                <p><label for="cep">CEP:</label> <input type="number" name="cep" id="cep" size="10" maxlength="9"
+                        placeholder="XXXXX-XXX" /required></p>
 
                 <p><label for="email_dono">Email:</label> <input type="email" name="email_dono" id="email_dono"
-                        size="80" maxlength="60" placeholder="Digite o endereço de email"> </p>
+                        size="80" maxlength="60" placeholder="Digite o endereço de email"/required> </p>
 
-                <p><label for="tel_dono">Tel/Cel:</label> <input type="text" name="tel_dono" id="tel_dono" size="12"
-                        maxlength="13" placeholder="99 99999-9999" /></p>
-                        <p><label for="tel_dono">Tel/Cel(2):</label> <input type="text" name="tel_dono" id="tel_dono" size="12"
-                            maxlength="13" placeholder="99 99999-9999" /></p>
+                <p><label for="tel_dono">Tel/Cel:</label> <input type="number" name="tel_dono" id="tel_dono" size="12"
+                        maxlength="13" placeholder="99 (99)99999-9999" /required></p>
+                        <p><label for="tel_dono">Tel/Cel(2):</label> <input type="number" name="tel_dono" id="tel_dono" size="12"
+                            maxlength="13" placeholder="99 (99)99999-9999" /></p>
 
             </fieldset>
 
 
             <fieldset id="ident_carro">
                 <legend> Carro </legend>
-                <p><label for="nome_carro">Carro:</label> <input type="text" name="nome_carro" id="nome_carro" size="50">
-                    <p><label for="info">Informação:</label> <input type="text" name="info" id="info" size="100">
+                <p><label for="nome_carro">Carro:</label> <input type="text" name="nome_carro" id="nome_carro" size="50"/required>
+                    <p><label for="info">Informação:</label> <input type="text" name="info" id="info" size="100"/required>
                 </p>
-
             </fieldset>
 
             <fieldset id="ident_marcacao">
@@ -108,7 +105,7 @@
                 </p>
 
                 <p>Primeira opção de horário:
-                    <input type="date" name="Pdata" id="Pdata">
+                    <input type="date" name="Pdata" id="Pdata"/required>
                 </p>
                 <p>Segunda opção de horário:
                     <input type="date" name="Sdata" id="Sdata">
@@ -143,6 +140,7 @@
                 emailvaiaqui@emailvaiaqui.com</a>
             - (0XX) 99999-9999 / (0XX) 88888-8888
         </p>
+        <p><a href="https://www.detran.sp.gov.br/">Detran</a></p>
     </footer>
 
 </body>
