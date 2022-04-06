@@ -11,13 +11,6 @@ h1 {
 }
 
 
-header #anuncio{
-    width: 510px;
-    float: left;
-    margin: 80px auto auto;
-    padding-top: 0px;
-}
-
 header section {
     padding-top: 70px;
 }
@@ -35,6 +28,10 @@ header section figure {
 header section figure a {
     padding: 25px 5px 0;
     border: none;
+}
+
+header section figure a img{
+    border: 50px;
 }
 
 header section figure a:first-child{
@@ -65,15 +62,9 @@ nav ul a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2em;
-    padding: 8px 50px;
+    padding: 8px 60px;
     line-height: 2em;
     align-items: center;
-}
-
-nav ul a img{
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
 }
 
 #inicial a[href="index.html"], #a a[href="sub.html"], #b a[href="fiat.html"], #c a[href="ford.html"], #d a[href="volk.html"], #e a[href="sites.html"] {
@@ -164,52 +155,24 @@ main h2+p::first-line{
 main hr{
     border-color: darkblue;
 }
+
 .anuncioA {
-    margin: 0 0 10px;
-    padding: 0;
-    overflow: auto;
-}
-.anuncioA .boxAnuncio {
-    width: 163px;
-    height: 230px;
-    border-bottom: solid thin darkblue;
-    float: left;
-    position: relative;
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    transition: transform 0.2s;
 }
 
-.anuncioA .boxAnuncio p {
-    text-align: center;
-    font-size: .95em;
-    line-height: 1.3em;
-    background-color: rgba(255, 255, 255, 1);
-    border-left: solid thin darkblue;
-    border-right: solid thin darkblue;
-    margin: 0;
-    padding: 7px 15px;
-    position: absolute;
-    bottom: -80px left 0;
-    transition: 1s linear 0.1s; cursor: default;
+.anuncioA .boxAnuncioa:hover {
+    transform: scale(1.1);
+    margin: 10px;
+}
+.anuncioA .boxAnunciob:hover {
+    transform: scale(1.1);
+    margin: 10px;
+}
+.anuncioA .boxAnuncioc:hover {
+    transform: scale(1.1);
+    margin: 10px;
 }
 
-.anuncioA .boxAnuncio p:first-line {
-    font-size: 1.1em;
-    font-variant: inherit;
-    font-style: normal;
-    font-weight: bolder;
-    color: darkblue;
-    padding: 0;
-}
-
-.anuncioA .boxAnuncio p:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-    bottom: 0;
-}
-
-aside audio {
-    width: 230px;
-}
-
-aside video {
-    width: 230px;
-}
