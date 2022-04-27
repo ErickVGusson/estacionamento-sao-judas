@@ -9,138 +9,139 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-    <header>
+<header>
 
-        <h1> Estacionamento São Judas </h1>
+    <h1> Estacionamento São Judas </h1>
 
-        <body>
-
-
-            <section>
-
-                <p>nos acompanhe: </p>
-                <figure>
-                    <a href="#"><img src="imagens/ms-facebook.png" alt="facebook"></a>
-                    <a href="#"><img src="imagens/ms-twitter.png" alt="twitter"></a>
-                    <a href="#"><img src="imagens/ms-pinterest.png" alt="pinterest"></a>
-                </figure>
-
-            </section>
-        </body>
-
-    </header>
-
-    <nav>
-
-        <ul>
-
-            <li><a href="index.html">Home</a></li>
-
-            <li><a href="fiat.html">Fiat</a></li>
-
-            <li><a href="ford.html">Ford</a></li>
-
-            <li><a href="volk.html">Volkswagen</a></li>
-
-            <li><a href="sub.html">Orçamentos</a></li>
-
-        </ul>
-
-    </nav>
-    <main>
-
-        <h1> Agendamento </h1>
-        <h2> Faça o seu agendamento com pelo menos 48 horas de antecedência</h2>
-
-        <form method="post" id="contato" action="obrigado.html">
-
-            <fieldset id="ident_dono">
-                <legend> Identificação do dono do carro </legend>
-
-                <p><label for="nome_dono">Nome:</label> <input type="text" name="nome_dono" id="nome_dono" size="50"
-                        maxlength="100" placeholder="Digite o nome completo do dono do carro" /required></p>
-
-                <p><label for="endereco">Endereço:</label> <input type="text" name="endereco" id="endereco" size="80"
-                        maxlength="60" placeholder="Digite o endereço" /required></p>
-
-                <p><label for="cep">CEP:</label> <input type="number" name="cep" id="cep" size="10" maxlength="9"
-                        placeholder="XXXXX-XXX" /required></p>
-
-                <p><label for="email_dono">Email:</label> <input type="email" name="email_dono" id="email_dono"
-                        size="80" maxlength="60" placeholder="Digite o endereço de email"/required> </p>
-
-                <p><label for="tel_dono">Tel/Cel:</label> <input type="number" name="tel_dono" id="tel_dono" size="12"
-                        maxlength="13" placeholder="99 (99)99999-9999" /required></p>
-                        <p><label for="tel_dono">Tel/Cel(2):</label> <input type="number" name="tel_dono" id="tel_dono" size="12"
-                            maxlength="13" placeholder="99 (99)99999-9999" /></p>
-
-            </fieldset>
+    <body>
 
 
-            <fieldset id="ident_carro">
-                <legend> Carro </legend>
-                <p><label for="nome_carro">Carro:</label> <input type="text" name="nome_carro" id="nome_carro" size="50"/required>
-                    <p><label for="info">Informação:</label> <input type="text" name="info" id="info" size="100"/required>
-                </p>
-            </fieldset>
+        <section>
 
-            <fieldset id="ident_marcacao">
-                <legend> Horário</legend>
-                <p>Indique os dias da semana de sua preferência:<br>
-                    <input type="checkbox" name="semana" value="iddomingo" /><label for="iddomingo"
-                        class="labelSimples">Domingo</label>
-                    <input type="checkbox" name="semana" value="idsegunda" /><label for="idsegunda"
-                        class="labelSimples">Segunda</label>
-                    <input type="checkbox" name="semana" value="idterca" /><label for="idterca"
-                        class="labelSimples">Terça-feira</label>
-                    <input type="checkbox" name="semana" value="idquarta" /><label for="idquarta"
-                        class="labelSimples">Quarta-feira</label>
-                    <input type="checkbox" name="semana" value="idquinta" /><label for="idquinta"
-                        class="labelSimples">Quinta-feira</label>
-                    <input type="checkbox" name="semana" value="idsexta" /><label for="idsexta"
-                        class="labelSimples">Sexta-feira</label>
-                    <input type="checkbox" name="semana" value="idsabado" /><label for="idsabado"
-                        class="labelSimples">Sábado</label>
-                </p>
+            <p>nos acompanhe: </p>
+            <figure>
+                <a href="#"><img src="imagens/ms-facebook.png" alt="facebook"></a>
+                <a href="#"><img src="imagens/ms-twitter.png" alt="twitter"></a>
+                <a href="#"><img src="imagens/ms-pinterest.png" alt="pinterest"></a>
+            </figure>
 
-                <p>Primeira opção de horário:
-                    <input type="date" name="Pdata" id="Pdata"/required>
-                </p>
-                <p>Segunda opção de horário:
-                    <input type="date" name="Sdata" id="Sdata">
-                </p>
+        </section>
+    </body>
 
-            </fieldset>
+</header>
 
-            <input type="submit" value="Enviar">
+<nav>
 
-        </form>
+    <ul>
 
-    </main>
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="fiat.html">Fiat</a></li>
+
+        <li><a href="ford.html">Ford</a></li>
+
+        <li><a href="volk.html">Volkswagen</a></li>
+
+        <li><a href="sub.html">Agendamento</a></li>
+
+    </ul>
+
+</nav>
+<main id="sub">
+
+    <h1> Agendamento </h1>
+    <h2> Faça o seu agendamento com pelo menos 48 horas de antecedência</h2>
+
+    <form method="post" id="contato" action="obrigado.html">
+
+        <fieldset id="ident_dono">
+            <legend> Identificação do dono do carro </legend>
+
+            <p><label for="nome_dono">Nome:</label> <input type="text" name="nome_dono" id="nome_dono" size="50"
+                    maxlength="100" placeholder="Digite o nome completo do dono do carro" /required></p>
+
+            <p><label for="endereco">Endereço:</label> <input type="text" name="endereco" id="endereco" size="80"
+                    maxlength="60" placeholder="Digite o endereço" /required></p>
+
+            <p><label for="cep">CEP:</label> <input type="number" name="cep" id="cep" size="10" maxlength="9"
+                    placeholder="XXXXX-XXX" /required></p>
+
+            <p><label for="email_dono">Email:</label> <input type="email" name="email_dono" id="email_dono" size="80"
+                    maxlength="60" placeholder="Digite o endereço de email" /required> </p>
+
+            <p><label for="tel_dono">Tel/Cel:</label> <input type="number" name="tel_dono" id="tel_dono" size="12"
+                    maxlength="13" placeholder="99 (99)99999-9999" /required></p>
+            <p><label for="tel_dono">Tel/Cel(2):</label> <input type="number" name="tel_dono" id="tel_dono" size="12"
+                    maxlength="13" placeholder="99 (99)99999-9999" /></p>
+
+        </fieldset>
 
 
-    <aside>
-        <img src="imagens/anuncio.png" alt="anúncio">
-    </aside>
-    
-    <footer>
-        <p>Atendimento Americana:
-            <a href="mailto:emailvaiaqui@emailvaiaqui.com">
-                emailvaiaqui@emailvaiaqui.com</a>
-            - (0XX) 99999-9999 / (0XX) 88888-8888
-        </p>
-        <p>Atendimento SBO:
-            <a href="mailto:emailvaiaqui@emailvaiaqui.com">
-                emailvaiaqui@emailvaiaqui.com</a>
-            - (0XX) 99999-9999 / (0XX) 88888-8888
-        </p>
-        <p>Atendimento Sumaré:
-            <a href="mailto:emailvaiaqui@emailvaiaqui.com">
-                emailvaiaqui@emailvaiaqui.com</a>
-            - (0XX) 99999-9999 / (0XX) 88888-8888
-        </p>
-        <p><a href="https://www.detran.sp.gov.br/">Detran</a></p>
-    </footer>
+        <fieldset id="ident_carro">
+            <legend> Carro </legend>
+            <p><label for="nome_carro">Carro:</label> <input type="text" name="nome_carro" id="nome_carro" size="50"
+                    /required>
+            <p><label for="info">Informação:</label> <input type="text" name="info" id="info" size="100" /required>
+            </p>
+        </fieldset>
+
+        <fieldset id="ident_marcacao">
+            <legend> Horário</legend>
+            <p>Indique os dias da semana de sua preferência:<br>
+                <input type="checkbox" name="semana" value="iddomingo" /><label for="iddomingo"
+                    class="labelSimples">Domingo</label>
+                <input type="checkbox" name="semana" value="idsegunda" /><label for="idsegunda"
+                    class="labelSimples">Segunda</label>
+                <input type="checkbox" name="semana" value="idterca" /><label for="idterca"
+                    class="labelSimples">Terça-feira</label>
+                <input type="checkbox" name="semana" value="idquarta" /><label for="idquarta"
+                    class="labelSimples">Quarta-feira</label>
+                <input type="checkbox" name="semana" value="idquinta" /><label for="idquinta"
+                    class="labelSimples">Quinta-feira</label>
+                <input type="checkbox" name="semana" value="idsexta" /><label for="idsexta"
+                    class="labelSimples">Sexta-feira</label>
+                <input type="checkbox" name="semana" value="idsabado" /><label for="idsabado"
+                    class="labelSimples">Sábado</label>
+            </p>
+
+            <p>Primeira opção de horário:
+                <input type="date" name="Pdata" id="Pdata" /required>
+            </p>
+            <p>Segunda opção de horário:
+                <input type="date" name="Sdata" id="Sdata">
+            </p>
+
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</main>
+
+
+<aside>
+    <img src="imagens/anuncio.png" alt="anúncio">
+</aside>
+
+<footer>
+    <p>Atendimento Americana:
+        <a href="mailto:emailvaiaqui@emailvaiaqui.com">
+            emailvaiaqui@emailvaiaqui.com</a>
+        - (0XX) 99999-9999 / (0XX) 88888-8888
+    </p>
+    <p>Atendimento SBO:
+        <a href="mailto:emailvaiaqui@emailvaiaqui.com">
+            emailvaiaqui@emailvaiaqui.com</a>
+        - (0XX) 99999-9999 / (0XX) 88888-8888
+    </p>
+    <p>Atendimento Sumaré:
+        <a href="mailto:emailvaiaqui@emailvaiaqui.com">
+            emailvaiaqui@emailvaiaqui.com</a>
+        - (0XX) 99999-9999 / (0XX) 88888-8888
+    </p>
+    <p><a href="https://www.detran.sp.gov.br/">Detran</a></p>
+</footer>
 
 </body>
 
